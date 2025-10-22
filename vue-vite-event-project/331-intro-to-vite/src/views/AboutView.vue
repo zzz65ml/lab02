@@ -5,5 +5,12 @@
 </template>
 
 <style scoped>
-/* 可自定义样式 */
+/* 简化样式：注释掉媒体查询 */
+/* @media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+} */
 </style>

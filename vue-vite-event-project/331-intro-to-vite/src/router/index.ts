@@ -8,7 +8,7 @@ const router = createRouter({
         {
             path: '/',
             name: 'event-list-view',
-            component: EventListView
+            component: EventListView // 首页路由指向 EventListView
         },
         {
             path: '/about',

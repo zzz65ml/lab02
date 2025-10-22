@@ -43,6 +43,17 @@
       "time": "09:00",
       "petsAllowed": false,
       "organizer": "Code Master"
+    },
+    {
+      "id": 9876543,
+      "category": "environment",
+      "title": "Tree Planting Drive",
+      "description": "Plant trees in urban areas to combat pollution.",
+      "location": "Green Park",
+      "date": "September 30, 2022",
+      "time": "08:00",
+      "petsAllowed": true,
+      "organizer": "Eco Warrior"
     }
   ]
 }

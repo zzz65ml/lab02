@@ -5,17 +5,17 @@ import { ref, onMounted } from 'vue'
 
 const events = ref<Event[]>([])
 
-// 替换为您的GitHub用户名和仓库名
-const MOCK_SERVER_URL = 'https://my-json-server.typicode.com/[您的GitHub用户名]/[您的仓库名]'
+// 替换为你的 GitHub 用户名和仓库名（例如：https://my-json-server.typicode.com/username/repo-name）
+const MOCK_SERVER_URL = 'https://my-json-server.typicode.com/[你的GitHub用户名]/[你的仓库名]'
 
 onMounted(async () => {
   try {
     const response = await fetch(`${MOCK_SERVER_URL}/events`)
     const data = await response.json()
-    events.value = data
+    events.value = data // 从 Mock Server 获取数据
   } catch (error) {
     console.error('Failed to fetch events:', error)
-    // 出错时使用本地数据作为备选
+    // 本地备选数据（请求失败时使用）
     events.value = [
       {
         id: 5928101,
@@ -54,3 +54,20 @@ onMounted(async () => {
   }
 })
 </script>
+
+<template>
+  <h1>Events For Good</h1> <!-- 仅首页显示的标题 -->
+  <div class="events">
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
+  </div>
+</template>
+
+<style scoped>
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+</style>

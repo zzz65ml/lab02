@@ -1,9 +1,8 @@
 <script setup lang="ts">
-// 修改导入方式，确保类型正确导入
 import { type Event } from '@/types'
 
 defineProps<{
-  event: Event
+  event: Event // 接收事件对象作为 props
 }>()
 </script>
 

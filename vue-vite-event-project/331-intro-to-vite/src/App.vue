@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </nav>
       </div>
     </header>
-    <RouterView /> <!-- 路由出口，渲染匹配的页面 -->
+    <RouterView /> <!-- 路由出口，动态渲染页面 -->
   </div>
 </template>
 

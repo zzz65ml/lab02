@@ -1,0 +1,9 @@
+/* 步骤1.3保留的Tailwind三大核心指令 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 步骤8：新增全局h1样式，通过@apply复用Tailwind工具类 */
+h1 {
+    @apply text-4xl mb-8; /* text-4xl（字体大小2.5rem）、mb-8（底部外边距2rem） */
+}

@@ -2,58 +2,35 @@
   "events": [
     {
       "id": 5928101,
-      "category": "animal welfare",
-      "title": "Cat Adoption Day",
-      "description": "Find your new feline friend at this event.",
-      "location": "Meow Town",
-      "date": "January 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Kat Laydee"
+      "title": "Vue 3 Workshop",
+      "time": "14:00",
+      "date": "2025-11-10",
+      "location": "CMU Room A101",
+      "description": "Learn Vue 3 Composition API and Vue Router in practice."
     },
     {
-      "id": 4582797,
-      "category": "food",
-      "title": "Community Gardening",
-      "description": "Join us as we tend to the community edible plants.",
-      "location": "Flora City",
-      "date": "March 14, 2022",
+      "id": 5928102,
+      "title": "TypeScript Basics",
       "time": "10:00",
-      "petsAllowed": true,
-      "organizer": "Fern Pollin"
+      "date": "2025-11-12",
+      "location": "CMU Room B202",
+      "description": "Introduction to TypeScript for frontend developers."
     },
     {
-      "id": 8419988,
-      "category": "sustainability",
-      "title": "Beach Cleanup",
-      "description": "Help pick up trash along the shore.",
-      "location": "Playa Del Carmen",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Carey Wales"
+      "id": 5928103,
+      "title": "Component Design",
+      "time": "16:00",
+      "date": "2025-11-15",
+      "location": "CMU Room C303",
+      "description": "Best practices for building reusable Vue components."
     },
     {
-      "id": 1234567,
-      "category": "education",
-      "title": "Coding Workshop for Kids",
-      "description": "Introduction to programming for children aged 8-12.",
-      "location": "Tech Hub",
-      "date": "August 15, 2022",
-      "time": "09:00",
-      "petsAllowed": false,
-      "organizer": "Code Master"
-    },
-    {
-      "id": 9876543,
-      "category": "environment",
-      "title": "Tree Planting Drive",
-      "description": "Plant trees in urban areas to combat pollution.",
-      "location": "Green Park",
-      "date": "September 30, 2022",
-      "time": "08:00",
-      "petsAllowed": true,
-      "organizer": "Eco Warrior"
+      "id": 5928104,
+      "title": "API Integration",
+      "time": "14:00",
+      "date": "2025-11-18",
+      "location": "CMU Room A101",
+      "description": "How to integrate Vue with backend APIs using Axios."
     }
   ]
 }

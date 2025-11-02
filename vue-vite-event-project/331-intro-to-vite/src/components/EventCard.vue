@@ -1,29 +1,32 @@
+<template>
+  <RouterLink class="event-link" :to="{ name: 'event-detail-view', params: { id: event.id } }">
+    <!-- 步骤6：将预设单位（p-4/w-64/mb-6）替换为自定义像素单位（p-[20px]/w-[250px]/mb-[18px]） -->
+    <div class="cursor-pointer border border-gray-600 p-[20px] w-[250px] mb-[18px] hover:scale-101 hover:shadow-sp">
+      <h2>{{ event.title }}</h2>
+      <span>@{{ event.time }} on {{ event.date }}</span>
+    </div>
+  </RouterLink>
+</template>
+
 <script setup lang="ts">
-import { type Event } from '@/types'
+// 前期步骤保留逻辑：引入路由组件、定义Event类型、接收props
+import { RouterLink } from 'vue-router'
+
+interface Event {
+  id: number
+  title: string
+  time: string
+  date: string
+}
 
 defineProps<{
-  event: Event // 接收事件对象作为 props
+  event: Event
 }>()
 </script>
 
-<template>
-  <div class="event-card">
-    <h2>{{ event.title }}</h2>
-    <span>@{{ event.time }} on {{ event.date }}</span>
-  </div>
-</template>
-
 <style scoped>
-.event-card {
-  padding: 20px;
-  width: 250px;
-  cursor: pointer;
-  border: 1px solid #39495c;
-  margin-bottom: 18px;
-}
 
-.event-card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+.event-link {
+  text-decoration: none; /* 移除链接默认下划线，前期项目原有逻辑 */
 }
 </style>
